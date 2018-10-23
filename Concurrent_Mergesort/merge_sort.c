@@ -371,11 +371,27 @@ int ptreadMergeSortCaller(int *arr,int n)
 int main()
 {
     int arr[N],n,seed;
-    printf("Enter any integer: ");
-    scanf("%d",&seed);
-    printf("Enter the size of array: ");
-    scanf("%d",&n);
-    generateArr(n,arr,seed);
+    int input_method=0;
+    printf("Select Input Method\n");
+    printf("1. Generate a random array\n");
+    printf("2. Enter numbers\n");
+    scanf("%d",input_method);
+    if(input_method==1)
+    {
+        printf("Enter any integer: ");
+        scanf("%d",&seed);
+        printf("Enter the size of array: ");
+        scanf("%d",&n);
+        generateArr(n,arr,seed);
+    }
+    if(input_method==2)
+    {
+        printf("Enter the size of array: ");
+        scanf("%d",&n);
+        printf("Enter array elements\n");
+        scanf("%d",&arr[i]);
+        sorted[i]=arr[i];
+    }
     inBuiltSort(n,sorted);
     normalMergeSortCaller(arr,n);
     shmMergeSortCaller(arr,n);

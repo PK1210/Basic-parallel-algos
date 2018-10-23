@@ -15,9 +15,9 @@ gcc -pthread pollBooth.c
 
 ```
 number_of_booths
-number_of_voters   number_of_evms   max_slots_in_evm    (for booth 0)
-number_of_voters   number_of_evms   max_slots_in_evm    (for booth 1)
-number_of_voters   number_of_evms   max_slots_in_evm    (for booth 2)
+number_of_voters   number_of_evms       (for booth 0)
+number_of_voters   number_of_evms       (for booth 1)
+number_of_voters   number_of_evms       (for booth 2)
 .
 .
 .
