@@ -375,7 +375,7 @@ int main()
     printf("Select Input Method\n");
     printf("1. Generate a random array\n");
     printf("2. Enter numbers\n");
-    scanf("%d",input_method);
+    scanf("%d",&input_method);
     if(input_method==1)
     {
         printf("Enter any integer: ");
@@ -389,8 +389,11 @@ int main()
         printf("Enter the size of array: ");
         scanf("%d",&n);
         printf("Enter array elements\n");
-        scanf("%d",&arr[i]);
-        sorted[i]=arr[i];
+        for(int i=0;i<n;i++)
+        {
+            scanf("%d",&arr[i]);
+            sorted[i]=arr[i];
+        }
     }
     inBuiltSort(n,sorted);
     normalMergeSortCaller(arr,n);
